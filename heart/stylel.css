@@ -1,0 +1,102 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+.container
+{
+    /* border: 1px solid; */
+    background-color: rgb(48, 41, 75);
+    height: 900px;
+    display: flex;
+}
+.heart
+{
+    overflow: hidden;
+    /* background-color: blue; */
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+.box
+{
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: none;
+    rotate: 45deg;
+    margin-top: 60px;
+    position: absolute;
+}
+.circle1
+{   
+    height: 150px;
+    width: 150px;
+    margin-left: 120px;
+    /* margin-top: 15px; */
+    background-color: red;
+    animation-name: heart2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    border-radius: 50%;
+    position: absolute;
+}
+.circle2
+{   
+    height: 150px;
+    width: 150px;
+    margin-right: 120px;
+    /* margin-top: 15px; */
+    background-color: red;
+    animation-name: heart1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+
+
+@keyframes heart1 {
+    25%
+    {
+        transform: translateY(0px) translateX(0px);
+    }
+    50%
+    {
+        transform: translateY(120px) translateX(120px);
+    }
+    75%
+    {
+        transform: translateY(120px) translateX(120px);
+    }
+}
+@keyframes heart2 {
+    25%
+    {
+        transform: translateY(120px) translateX(-120px);
+    }
+    50%
+    {
+        transform: translateY(120px) translateX(-120px);
+
+    }
+    75%
+    {
+        transform: translateY(0px) translateX(0px);
+
+    }
+}
+
+
+
