@@ -1,0 +1,125 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+.container
+{
+    /* border: 1px solid; */
+    background-color: rgb(48, 41, 75);
+    height: 900px;
+    display: flex;
+    padding: 100px 600px;
+}
+.pacman
+{
+    height: 120px;
+    width: 120px;
+    position: relative;
+    animation-name: pac;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pac {
+    
+    23%
+    {
+        transform: translateX(500px);
+    }
+    26%
+    {
+        transform: rotate(90deg) translateY(-500px);
+    }
+    48%
+    {
+        transform: rotate(90deg) translateY(-500px) translateX(500px);   
+    }
+    52%
+    {
+        transform: translateX(500px) translateY(500px) rotate(180deg);
+    }
+    73%
+    {
+        transform: translateY(500px) rotate(180deg);
+    }
+    76%
+    {
+        transform:  translateY(500px) rotate(270deg);
+    }
+    98%
+    {
+        transform: rotate(270deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+
+
+
+
+}
+.pac1
+{
+    /* overflow: hidden; */
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid transparent;
+    border-left: 60px solid yellow;
+    border-bottom: 60px solid yellow;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    position: absolute;
+    animation-name: down;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.pac2
+{
+    /* overflow: hidden; */
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid yellow;
+    border-left: 60px solid yellow;
+    border-bottom: 60px solid yellow;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    position: absolute;
+    animation-name: up;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.eye
+{
+    width: 20px;
+    height: 20px;
+    margin: 10px 0px 0px 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+@keyframes down {
+    50%
+    {
+        transform: rotate(-45deg);
+    }   
+}
+@keyframes up {
+    50%
+    {
+        transform: rotate(45deg);
+    }   
+}
+

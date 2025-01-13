@@ -1,0 +1,224 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+.container
+{
+    background-color: rgb(48, 41, 75);
+    height: 900px;
+    display: flex;
+}
+.loader1
+{
+    /* background-color: blue; */
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.loader1 .circle
+{
+    border: 10px solid rgba(255, 255, 255, 0.753);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50%;
+    /* position: absolute; */
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    border-bottom: 10px solid rgb(218, 17, 51);
+}
+
+
+ 
+@keyframes loader {
+    
+    100%
+    {
+        transform: rotate(360deg);
+    }
+
+}
+/* loader 2 */
+.loader2
+{
+    /* background-color: blue; */
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.loader2 .circle
+{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50%;
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    border-top: 10px solid rgb(218, 17, 51);
+    border-left: 10px solid rgb(243, 247, 10);
+    border-bottom: 10px solid rgb(77, 17, 218);
+    border-right: 10px solid rgb(17, 218, 27);
+}
+
+
+/* loader3 */
+.loader3
+{
+    /* background-color: blue; */
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    position: relative;
+    rotate: 130deg;
+}
+
+.loader3 .dot
+{
+    transform-origin: 50px 50px;
+    width: 20px;
+    height: 20px;
+    margin-top: 100px;
+    margin-left: 70px;
+    background-color: rgb(32, 49, 202);
+    border-radius: 50%;
+    position: absolute;
+    animation-name: dots;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.loader3 :nth-child(2)
+{
+    animation-delay: 0.1s;
+    background-color: #e22525;
+}
+.loader3 :nth-child(3)
+{
+    animation-delay: 0.2s;
+    background-color: #3be225;
+}
+.loader3 :nth-child(4)
+{
+    animation-delay: 0.3s;
+    background-color: #25bce2;
+}
+.loader3 :nth-child(5)
+{
+    animation-delay: 0.4s;
+    background-color: #dcf500;
+}
+.loader3 :nth-child(6)
+{
+    animation-delay: 0.5s;
+    background-color: #e225b9;
+}
+.loader3 :nth-child(7)
+{
+    animation-delay: 0.6s;
+    background-color: #e29025;
+}
+.loader3 :nth-child(8)
+{
+    animation-delay: 0.7s;
+    background-color: #25e2b3;
+}
+.loader3 :nth-child(9)
+{
+    animation-delay: 0.8s;
+    background-color: #7d0baa;
+}
+@keyframes dots {
+    0%
+    {
+        transform:rotate(0deg);
+    }
+    50%
+    {
+        transform: rotate(360deg) ;
+    } 
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+/* loader4 */
+.loader4
+{
+    /* background-color: blue; */
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.loader4 .circle
+{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border: 15px solid white;
+    border-radius: 50%;
+    transform: skewX(200deg);
+    rotate: -40deg;
+    animation-name: anim;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin: auto;
+}
+.loader4 :nth-child(2)
+{
+    animation-delay: 1s;
+}
+.loader4 :nth-child(3)
+{
+    animation-delay: 2s;
+}
+
+@keyframes anim {
+    39%
+    {
+        transform: scale(0.3) skewX(200deg) ;
+    }
+    40%
+    {
+        transform: scale(0.3) skewX(200deg) ;
+    }
+    70%
+    {
+        transform: scale(0.3) translateY(200px) translateX(-150px) skewX(200deg) ;
+    }
+    74%
+    {
+        transform: scale(0.3) translateY(200px) translateX(-150px) skewX(200deg) ;
+    }
+
+}
