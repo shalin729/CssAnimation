@@ -1,0 +1,302 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+.container
+{
+    /* border: 1px solid; */
+    background-color: rgb(48, 41, 75);
+    height: 900px;
+    /* display: flex; */
+}
+.piano
+{
+    /* background-color: blue; */
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: center;
+}
+.piano .key
+{
+    background-color: rgb(255, 255, 255);
+    width: 35px;
+    margin-bottom: 70px;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: white;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+}
+
+.key1, .dot1
+{   
+    height: 200px;
+    animation-name: key1;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    /* animation-direction: normal; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes key1 {
+
+    40%
+    {
+        transform: translateY(-90px);
+    }
+    65%
+    {
+        transform: translateY(-40px);
+    }
+    80%
+    {
+        transform: translateY(-60px);
+    }   
+}
+.key2, .dot2
+{
+    height: 180px;
+    animation-name: key2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    /* animation-direction: normal; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes key2 {
+
+    40%
+    {
+        transform: translateY(-20px);
+    }
+    55%
+    {
+        transform: translateY(-40px);
+    }
+    70%
+    {
+        transform: translateY(-30px);
+    }   
+    80%
+    {
+        transform: translateY(-50px);
+    }   
+}
+.key3, .dot3
+{   
+    height: 170px;
+    animation-name: key3;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    /* animation-direction: normal; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes key3 {
+
+    40%
+    {
+        transform: translateY(-60px);
+    }
+    55%
+    {
+        transform: translateY(-20px);
+    }
+    70%
+    {
+        transform: translateY(-50px);
+    }   
+}
+.key4, .dot4
+{   
+    height: 190px;
+    animation-name: key4;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    /* animation-direction: normal; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes key4 {
+
+    40%
+    {
+        transform: translateY(-60px);
+    }
+    65%
+    {
+        transform: translateY(-20px);
+    }
+    80%
+    {
+        transform: translateY(-40px);
+    }   
+}
+.key5, .dot5
+{
+    height: 160px;
+    animation-name: key5;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    /* animation-direction: normal; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes key5 {
+
+    40%
+    {
+        transform: translateY(-20px);
+    }
+    55%
+    {
+        transform: translateY(-40px);
+    }
+    80%
+    {
+        transform: translateY(-30px);
+    }   
+}
+.key6, .dot6
+{   
+    height: 180px;
+    animation-name: key6;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    /* animation-direction: normal; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes key6 {
+
+    40%
+    {
+        transform: translateY(-50px);
+    }
+    65%
+    {
+        transform: translateY(-20px);
+    }
+    80%
+    {
+        transform: translateY(-50px);
+    }   
+}
+.key7, .dot7
+{
+    height: 160px;
+    animation-name: key7;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    /* animation-direction: normal; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes key7 {
+
+    40%
+    {
+        transform: translateY(-20px);
+    }
+    65%
+    {
+        transform: translateY(-60px);
+    }
+    80%
+    {
+        transform: translateY(-30px);
+    }   
+}
+.key8, .dot8
+{   
+    height: 190px;
+    animation-name: key8;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    /* animation-direction: normal; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes key8 {
+
+    40%
+    {
+        transform: translateY(-40px);
+    }
+    55%
+    {
+        transform: translateY(-20px);
+    }
+    70%
+    {
+        transform: translateY(-30px);
+    }   
+}
+
+
+.key9, .dot9
+{   
+    height: 170px;
+    animation-name: key9;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    /* animation-direction: normal; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes key9 {
+
+    40%
+    {
+        transform: translateY(-20px);
+    }
+    55%
+    {
+        transform: translateY(-60px);
+    }
+    75%
+    {
+        transform: translateY(-10px);
+    }   
+}
+
+
+
+
+.dot
+{
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 1.4px;
+    margin: auto;
+}
+.dot4, .dot7
+{
+    height: 35px;
+    width: 35px;
+}
+.dot2, .dot8
+{
+    height: 25px;
+    width: 25px;
+}
