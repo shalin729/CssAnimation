@@ -1,0 +1,78 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+.container
+{
+    /* border: 1px solid; */
+    background-color: rgb(48, 41, 75);
+    height: 900px;
+    display: flex;
+}
+.skew
+{
+    /* overflow: hidden; */
+    /* background-color: blue; */
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.box1
+{
+    border: 8px solid rgba(255, 255, 255, 0.753);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    animation-name: skew1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+.box2
+{   
+    border: 8px solid rgba(255, 255, 255, 0.753);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    animation-name: skew2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+ 
+@keyframes skew1 {
+    
+    50%
+    {
+        transform: rotate(45deg)skewY(-90deg);
+    }
+
+}
+@keyframes skew2 {
+
+    50%
+    {
+        transform: rotate(45deg) skewX(90deg);
+
+    }
+}
+
+
+
