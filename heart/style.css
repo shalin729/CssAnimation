@@ -1,0 +1,75 @@
+/*
+  "Enterprise-Level" CSS Heart Animation
+  ---
+  - Uses a single HTML element (`.heart`).
+  - Heart shape is created with CSS pseudo-elements (`::before`, `::after`).
+  - Uses CSS Custom Properties for easy customization of size and color.
+  - Scalable: Uses `em` units, so changing the font-size of the `.heart`
+    element will scale the entire shape.
+  - Animation is a smooth, subtle "beat" using `transform: scale()`.
+*/
+
+:root {
+  --heart-size: 10em; /* Controls the overall size of the heart */
+  --heart-color: #ff4757; /* A nice red color */
+  --background-color: #2f3542;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+.heart {
+  font-size: var(--heart-size);
+  position: relative;
+  width: 1em;
+  height: 1em;
+  animation: beat 1.2s ease-in-out infinite;
+}
+
+/*
+  The heart shape is made of three parts:
+  1. A rotated square (the main `.heart` element).
+  2. A circle attached to the top-left (the `::before` pseudo-element).
+  3. A circle attached to the top-right (the `::after` pseudo-element).
+*/
+.heart::before,
+.heart::after {
+  content: '';
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: var(--heart-color);
+}
+
+.heart::before {
+  top: 0;
+  left: 0.5em;
+}
+
+.heart::after {
+  top: -0.5em;
+  left: 0;
+}
+
+/* The main element is rotated to form the bottom point of the heart. */
+.heart {
+  transform: rotate(-45deg);
+}
+
+/* A simple, smooth "beating" animation */
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1) rotate(-45deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(-45deg);
+  }
+}
